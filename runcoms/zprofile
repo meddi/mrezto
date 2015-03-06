@@ -41,12 +41,16 @@ typeset -gU cdpath fpath mailpath path
 #   $cdpath
 # )
 
+# GO
+export GOROOT=/usr/local/go
+export GOPATH=$HOME/go
+export PATH=$PATH:$GOROOT/bin:$GOPATH/bin
+export WORKON_HOME=/home/mehdi/.virtualenv
+source /usr/local/bin/virtualenvwrapper.sh
+
 # Set the list of directories that Zsh searches for programs.
 path=(
   /usr/local/{bin,sbin}
-  usr/local/go/bin
-  $GOPATH/bin
-  $HOME/go/bin
   $HOME/.cabal/bin
   $HOME/go_appengine
   $path
