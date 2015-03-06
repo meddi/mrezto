@@ -28,16 +28,24 @@ zstyle ':prezto:load' pmodule \
   'terminal' \
   'editor' \
   'history' \
+  'history-substring-search' \
   'directory' \
   'spectrum' \
   'utility' \
-  'ssh' \
   'completion' \
+  'homebrew' \
+  'osx' \
+  'ruby' \
+  'rails' \
   'git' \
-  'archive' \
+  'node' \
+  'python' \
+  'haskell' \
   'syntax-highlighting' \
-  'history-substring-search' \
+  'tmux' \
+  'utility' \
   'prompt'
+
 #
 # Editor
 #
@@ -52,7 +60,7 @@ zstyle ':prezto:module:editor' key-bindings 'vi'
 # Theme
 #
 # Set the prompt theme to load. 
-zstyle ':prezto:module:prompt' theme 'nicoulaj'
+zstyle ':prezto:module:prompt' theme 'josh'
 
 
 #
