@@ -44,6 +44,7 @@ typeset -gU cdpath fpath mailpath path
 # GO
 export GOROOT=/usr/local/go
 export GOPATH=$HOME/go
+export GOPATH=$HOME/go_appengine/goroot
 export PATH=$PATH:$GOROOT/bin:$GOPATH/bin
 export WORKON_HOME=$HOME/.virtualenvs
 source /usr/local/bin/virtualenvwrapper.sh
@@ -52,7 +53,6 @@ source /usr/local/bin/virtualenvwrapper.sh
 path=(
   /usr/local/{bin,sbin}
   $HOME/.cabal/bin
-  $HOME/go_appengine
   $path
 )
 
