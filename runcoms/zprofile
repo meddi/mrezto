@@ -17,8 +17,8 @@ fi
 # Editors
 #
 
-export EDITOR='nano'
-export VISUAL='nano'
+export EDITOR='vi'
+export VISUAL='vi'
 export PAGER='less'
 
 #
@@ -44,8 +44,8 @@ typeset -gU cdpath fpath mailpath path
 # GO
 export GOROOT=/usr/local/go
 export GOPATH=$HOME/go
-export GOPATH=$HOME/go_appengine/goroot
-export PATH=$PATH:$GOROOT/bin:$GOPATH/bin
+export APPENGINE=$HOME/go_appengine
+export PATH=$GOROOT/bin:$APPENGINE:$PATH
 export WORKON_HOME=$HOME/.virtualenvs
 source /usr/local/bin/virtualenvwrapper.sh
 
