@@ -48,7 +48,7 @@ export APPENGINE=$HOME/go_appengine
 export PATH=$GOROOT/bin:$APPENGINE:$PATH
 export WORKON_HOME=$HOME/.virtualenvs
 source /usr/local/bin/virtualenvwrapper.sh
-
+alias c='clear'
 # Set the list of directories that Zsh searches for programs.
 path=(
   /usr/local/{bin,sbin}
