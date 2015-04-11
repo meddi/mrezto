@@ -42,10 +42,9 @@ typeset -gU cdpath fpath mailpath path
 # )
 
 # GO
-export GOROOT=/usr/local/go
 export GOPATH=$HOME/go
 export APPENGINE=$HOME/go_appengine
-export PATH=$GOROOT/bin:$APPENGINE:$PATH
+export PATH=$PATH:/usr/local/go/bin:$APPENGINE:$GOPATH/bin
 export WORKON_HOME=$HOME/.virtualenvs
 source /usr/local/bin/virtualenvwrapper.sh
 alias c='clear'
