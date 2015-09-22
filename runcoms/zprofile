@@ -41,18 +41,15 @@ typeset -gU cdpath fpath mailpath path
 #   $cdpath
 # )
 
-## GO
-#export GOPATH=$HOME/go
-#export APPENGINE=$HOME/go_appengine
+# Golang
 #export PATH=$PATH:/usr/local/go/bin:$APPENGINE:$GOPATH/bin
-#export PATH=$PATH:/usr/local/Cellar
-#export WORKON_HOME=$HOME/Envs
 source /usr/local/bin/virtualenvwrapper.sh
 alias c='clear'
+alias git=hub
 # Set the list of directories that Zsh searches for programs.
 path=(
-  $HOME/{go,go_appengine,.virtualenvs,Envs}
   /usr/local/{bin,sbin,opt/android-sdk,go/bin,Cellar}  
+  $HOME/{go,go_appengine,.virtualenvs,Envs,anaconda/bin}
   $path
 )
 
