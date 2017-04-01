@@ -1,4 +1,3 @@
-#
 # Executes commands at login pre-zshrc.
 #
 # Authors:
@@ -42,13 +41,15 @@ typeset -gU cdpath fpath mailpath path
 # )
 
 # Golang
-#export PATH=$PATH:/usr/local/go/bin:$APPENGINE:$GOPATH/bin
+export GOPATH=$HOME/go/
+export PATH=$PATH:/usr/local/go/bin:$APPENGINE:$GOPATH/bin:$PATH
 source /usr/local/bin/virtualenvwrapper.sh
+source /usr/local/etc/autojump.sh
 alias c='clear'
 alias git=hub
 # Set the list of directories that Zsh searches for programs.
 path=(
-  /usr/local/{bin,sbin,opt/android-sdk,go/bin,Cellar}  
+  /usr/local/{bin,sbin,opt/android-sdk,go/bin,Cellar,Cellar/boost/1.58.0/include,Cellar/boost/1.58.0/lib}  
   $HOME/{go,go_appengine,.virtualenvs,Envs,anaconda/bin}
   $path
 )
